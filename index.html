@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+<body>
+    <div class="Container">
+        <form class="form">
+            <div class="section">
+                <label for="name">Product Name<span>*</span></label>
+                <input type="text" id="name" name="name" oninput="Validate()">
+                <p id="error">Invalid Name</p>
+            </div>
+            <div class="section">
+                <label for="category">Product Category<span>*</span></label>
+                <input type="text" id="category" name="category">
+            </div>
+            <div class="section">
+                <label for="price">Price<span>*</span></label>
+                <input type="number" id="price" name="name">
+            </div>
+            <div class="section mytextarea">
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit" onsubmit="Validate()" id="btn1">Add Product</button>
+                <button type="submit"><a href="table.html">Show Products</a></button>
+            </div>
+        </form>
+        <div class="search"></div>
+        <div class="table"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

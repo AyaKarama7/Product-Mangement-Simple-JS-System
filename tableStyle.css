@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.Container{
+    background-image: url(images/joshua-sortino-f3uWi9G-lus-unsplash.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+#search{
+    width: 50%;
+    height: 7%;
+    position: relative;
+}
+#search input{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 4% 8%;
+    outline-style: none;
+}
+.Sicon{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    color: rgb(56, 32, 15);
+}
+.table{
+    width: 90%;
+    margin: 3%;
+    overflow: auto;
+}
+.th{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(56, 32, 15);
+}
+.th div
+{
+    width: 90%;
+    padding: 1%;
+    border: 1px solid rgb(56, 32, 15);
+    text-align: center;
+    color: white;
+    background-color: rgb(56, 32, 15);
+}
+.tr{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(56, 32, 15);
+    position: relative;
+}
+.tr .td{
+    width: 90%;
+    padding: 2%;
+    border: 1px solid rgb(56, 32, 15);
+    text-align: center;
+    color: white;
+    background-color: rgba(1, 1, 1,.5);
+}
+.icon{
+    cursor: pointer;
+    margin: 5%;
+}
+.icon.one{
+    background-color: green;
+}
+.icon.two{
+    color: red;
+}
+.icon.three{
+    color: white;
+}
+::-webkit-scrollbar{
+    background-color: rgba(1, 1, 1,.5);
+    width: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(56, 32, 15);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-button{
+    background-color: transparent;
+}
+button{
+    border:2px solid rgb(56, 32, 15);
+    background-color: transparent;
+    color: rgb(56, 32, 15);
+    border-radius: 20px;
+    transition: 1s background-color;
+    width: 10%;
+    padding: 1%;
+    margin: 0% 2%;
+    cursor: pointer;
+}
+button a{
+    color: rgb(56, 32, 15);
+    transition: 1s color;
+}
+button:hover{
+    background-color: rgb(56, 32, 15);
+    color: white;
+}
+button:hover a{
+    color: white;
+}
+#check{
+    position: absolute;
+    width:90%;
+    height: 2%;
+    background-color: white;
+    top: 44%;
+    visibility: hidden;
+}
+@media screen and (max-width:700px) {
+    html{
+        font-size: 10px;
+    }
+    button{
+        width: 80%;
+    }
+}
